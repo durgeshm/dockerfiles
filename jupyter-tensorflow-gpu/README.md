@@ -5,7 +5,7 @@
 ```
 mkdir notebooks
 
-nvidia-docker run -it -p 8888:8888 -d -v ./notebooks:/notebooks durgeshm/jupyter-tensorflow-gpu
+nvidia-docker run -it -p 8888:8888 -d -v notebooks:/notebooks durgeshm/jupyter-tensorflow-gpu
 ```
 
 Then, navigate to http://localhost:8888 on your host browser. (or, better - ssh tunnel to host server on port 8888 and navigate from your local machine).
