@@ -12,6 +12,10 @@ RUN ["mkdir", "notebooks"]
 COPY jupyter_notebook_config.py /root/.jupyter/
 COPY run_jupyter.sh /
 
+# Jupyter port
+EXPOSE 8888
+
+# Store notebooks in this mounted directory
 VOLUME /notebooks
 
 CMD ["/run_jupyter.sh"]
